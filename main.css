@@ -1,0 +1,109 @@
+/* CSS reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+.profile-card {
+  /*position*/
+  width: 480px;
+  max-width: calc(100vw - 10px);
+  /*format*/
+  background-color: hsla(0, 0%, 100%, .5);
+  border-radius: 4px;
+  box-shadow: hsla(0, 0%, 0%, .8) 10px 10px 80px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /*background image and format*/
+  background: url('assets/background.jfif') no-repeat center center fixed;
+  background-size: cover;
+  font-family: Trebuchet MS, sans-serif;
+}
+
+/*position elements*/
+.head, .links {
+  text-align: center;
+}
+
+.head, .content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.profile-image {
+  margin-top: -60px;
+}
+
+img {
+  /* format */
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /*gray border */
+  padding: 1px;
+  background-color: #666;
+  /*interaction*/
+  transition: all 0.5s ease-in-out;
+  /*filter: grayscale(50%);*/
+}
+
+/* Contact links */
+ul {
+  list-style-type: none; /*remove dots*/
+}
+
+li {
+  display: inline; /*display in row*/
+}
+
+/*make larger space between elements*/
+.head, .about {
+  margin-bottom: 5%;
+}
+
+.content {
+  padding: 5% 10%;
+  /*border between head and content*/
+  border-top: 1px solid hsla(0, 0%, 30%, .8);
+}
+
+/*interaction*/
+img:hover {
+  transform: scale(1.1);
+  filter: grayscale(20%);
+}
+
+.social-media-icon {
+  color: blue;
+}
+
+.fa-map-marker {
+  color: red;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.profession {
+  font-size: 20px;
+}
+
+.location {
+  font-size: 20px;
+}
+
+.about {
+  text-align: justify;
+}
+
+.about, .head, .contact-me {
+    color: rgb(47, 79, 79);
+}
